@@ -1,0 +1,7 @@
+name: iota-node
+description: A stack which provides an iota-full-node (iri).
+version: 0.0.1
+category: Services
+maintainer: p.huetter@encircle360.com
+license: NA
+projectURL: https://github.com/encircle360/iri
