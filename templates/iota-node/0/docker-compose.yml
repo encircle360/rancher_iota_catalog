@@ -1,0 +1,14 @@
+version: '2'
+services:
+  iri:
+    image: registry.gitlab.com/encircle360/iri:dev
+    environment:
+      NEIGHBORS: udp://94.156.128.15:14600 udp://185.181.8.149:14600 udp://88.99.249.250:41041
+      HEADLESS: 'true'
+      DEBUG: 'false'
+    stdin_open: true
+    volumes:
+    - /opt/docker/iota-node/iri/db:/iri/db
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
